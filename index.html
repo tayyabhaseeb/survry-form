@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Survey form</title>
+  </head>
+  <body>
+    <h1 id="title">Tell me about music</h1>
+    <p id="description">
+      This is the survey where you can tell us about the music you are inspired
+      by
+    </p>
+    <div class="container">
+     <div class="section-1">
+
+      <form id="survey-form">
+        <label for="name" id="name-label">First name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="first name"
+          class="extend"
+        /><br />
+
+        <label for="Email" id="email-label">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="email address"
+          class="extend"
+        /><br />
+
+        <label for="number" id="number-label">Number:</label><br />
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="0"
+          max="10"
+          placeholder="ratings"
+          required
+          class="extend"
+        /><br />
+      </div>
+
+        
+          <label for="music" id="dropdown">Musical instruments:</label>
+
+          <select name="Musical instruments" id="dropdown">
+            <option value="flute">flute</option>
+            <option value="violin">violin</option>
+            <option value=" trumpet">trumpet</option>
+            <option value="baritone">baritone</option>
+          </select>
+          <br />
+          <div class="inline">
+          <label for="gender">Gender</label><br />
+
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">male </label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">female</label><br />
+          <input type="radio" id="none" name="gender" value="none" />
+          <label for="none">none </label><br />
+
+          <label for="Vehicle">Vehicle</label><br />
+
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          <label for="vehicle1"> I have a bike</label><br />
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+          <label for="vehicle2"> I have a car</label><br />
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+          <label for="vehicle3"> I have a boat</label><br />
+          </div>
+        
+
+        <div class="section-3">
+
+        <textarea
+          wrap="off"
+          name="Comments"
+          maxlength="300 words"
+          placeholder="comments"
+          class="extend"
+        ></textarea>
+        <br />
+
+      </div>
+
+        <input type="submit" id="submit" />
+      </form>
+    </div>
+
+   
+  </body>
+</html>
